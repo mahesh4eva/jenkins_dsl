@@ -11,7 +11,7 @@ job("ruby_test_job") {
 	}
 
 	steps {
-		shell("echo "AUT url is \$url" \npython -v")
+		shell("echo 'AUT url is \$url' \npython -v")
 	}
 }
 
