@@ -1,35 +1,35 @@
 job("ruby_test_job") {
-	parameters {
-		stringParam("url", "http://yourapp.com", "Provide your app")
-		choiceParam("env", ["QA", "Staging", "Prod"], "Select your environment")
-	}
+  parameters {
+    stringParam("url", "http://yourapp.com", "Provide your app")
+    choiceParam("env", ["QA", "Staging", "Prod"], "Select your environment")
+  }
 
-	label("ruby1")
+  label("ruby1")
 
-	scm {
-		github("rajumavuri/jenkins_dsl", "master")
-	}
+  scm {
+    github("rajumavuri/jenkins_dsl", "master")
+  }
 
-	steps {
-		shell("echo \"AUT url is \$url\" \nruby -v")
-	}
+  steps {
+    shell("echo \"AUT url is \$url\" \nruby -v")
+  }
 }
 
 job("ruby_test_job2") {
-	parameters {
-		stringParam("url", "http://yourapp.com", "Provide your app")
-		choiceParam("env", ["QA", "Staging", "Prod"], "Select your environment")
-	}
+  parameters {
+    stringParam("url", "http://yourapp.com", "Provide your app")
+    choiceParam("env", ["QA", "Staging", "Prod"], "Select your environment")
+  }
 
-	label("ruby2")
+  label("ruby2")
 
-	scm {
-		github("rajumavuri/jenkins_dsl", "master")
-	}
+  scm {
+    github("rajumavuri/jenkins_dsl", "master")
+  }
 
-	steps {
-		shell("echo \"AUT url is \$url\" \nruby -v")
-	}
+  steps {
+    shell("echo \"AUT url is \$url\" \nruby -v")
+  }
 }
 
 listView("Ruby Jobs") {
