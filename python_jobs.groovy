@@ -5,9 +5,6 @@ job("ruby_test_job") {
 	}
 
 	label("ruby1")
-	wrappers {
-		preBuildCleanup()
-	}
 
 	scm {
 		remote {
@@ -20,3 +17,4 @@ job("ruby_test_job") {
 		shell("echo AUT url is $url \n python -v")
 	}
 }
+
