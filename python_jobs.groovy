@@ -12,8 +12,8 @@ job("ruby_test_job") {
 	scm {
 		remote {
 			url("git@github.com:rajumavuri/jenkins_dsl.git")
-			branch("*/master")
 		}
+		branch("*/master")
 	}
 
 	steps {
