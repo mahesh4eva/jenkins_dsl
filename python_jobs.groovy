@@ -1,7 +1,7 @@
 job("ruby_test_job") {
 	parameters {
 		stringParam("url", "http://yourapp.com", "Provide your app")
-		choiceParam("env", "QA", "Provide your environment")
+		choiceParam("env", ["QA", "Staging", "Prod"], "Select your environment")
 	}
 
 	label("ruby1")
@@ -17,6 +17,6 @@ job("ruby_test_job") {
 	}
 
 	steps {
-		shell("echo AUT url is $url \n ruby -v")
+		shell("echo AUT url is $url \n python -v")
 	}
 }
