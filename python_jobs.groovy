@@ -7,10 +7,7 @@ job("ruby_test_job") {
 	label("ruby1")
 
 	scm {
-		remote {
-			url("git@github.com:rajumavuri/jenkins_dsl.git")
-		}
-		branch("*/master")
+		github("git@github.com:rajumavuri/jenkins_dsl.git", "master")
 	}
 
 	steps {
