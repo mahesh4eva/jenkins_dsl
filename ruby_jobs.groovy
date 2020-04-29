@@ -31,3 +31,18 @@ job("ruby_test_job2") {
 		shell("echo 'AUT url is \$url' \nruby -V")
 	}
 }
+
+listView("Ruby Jobs") {
+  jobs {
+    regex("(ruby.*)")
+  }
+  columns {
+    status()
+    weather()
+    name()
+    lastSuccess()
+    lastFailure()
+    lastDuration()
+    buildButton()
+  }
+}
