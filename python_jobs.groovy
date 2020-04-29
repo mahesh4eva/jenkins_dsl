@@ -7,11 +7,10 @@ job("ruby_test_job") {
 	label("ruby1")
 
 	scm {
-		github("git@github.com:rajumavuri/jenkins_dsl.git", "master")
+		github("rajumavuri/jenkins_dsl.git", "master")
 	}
 
 	steps {
 		shell("echo 'AUT url is \$url' \npython -v")
 	}
 }
-
