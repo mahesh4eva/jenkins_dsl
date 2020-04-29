@@ -11,6 +11,6 @@ job("python_test_job") {
 	}
 
 	steps {
-		shell("echo 'AUT url is \$url' \npython -V")
+		shell("echo \"AUT url is \$url\" \npython -V")
 	}
 }

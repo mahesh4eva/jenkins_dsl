@@ -11,6 +11,6 @@ job("java_test_job") {
 	}
 
 	steps {
-		shell("echo 'AUT url is \$url' \njava -version")
+		shell("echo \"AUT url is \$url\" \njava -version")
 	}
 }

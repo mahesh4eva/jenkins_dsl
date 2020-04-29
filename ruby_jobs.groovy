@@ -11,7 +11,7 @@ job("ruby_test_job") {
 	}
 
 	steps {
-		shell("echo 'AUT url is \$url' \nruby -V")
+		shell("echo \"AUT url is \$url\" \nruby -v")
 	}
 }
 
@@ -28,7 +28,7 @@ job("ruby_test_job2") {
 	}
 
 	steps {
-		shell("echo 'AUT url is \$url' \nruby -V")
+		shell("echo \"AUT url is \$url\" \nruby -v")
 	}
 }
 
